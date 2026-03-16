@@ -1,3 +1,12 @@
+/*
+Assumed challenge criteria:
+- Given an array of numbers and an integer k.
+- Return the k most frequent values in the array.
+- Frequency means how many times each value appears.
+- Result should contain only the values, not their counts.
+- If multiple values have the same frequency, the prompt may allow any valid order.
+*/
+
 nums = [1, 1, 1, 2, 2, 3]
 k = 2
 
