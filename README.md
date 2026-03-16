@@ -4,14 +4,25 @@ This repository is for practicing common JavaScript coding challenges and proble
 
 ## Purpose
 
-The current exercises focus on array processing, hash-based lookups, grouping logic, and sequence detection.
+The current exercises focus on array processing, hash-based lookups, grouping logic, sequence detection, and prefix-sum counting.
+
+## Folder Structure
+
+Current layout:
+
+- `dayOne/`
+	- `dayoneP1.js`
+	- `dayOneP2.js`
+	- `dayOneP3.js`
+	- `dayOneP4.js`
+	- `dayOneP5.js`
 
 ## Current Challenges By Category
 
 ### Hash Map Lookup
 
 #### Two Sum
-File: `dayoneP1.js`
+File: `dayOne/dayoneP1.js`
 
 Tests:
 - using a `Map` for constant-time lookups
@@ -28,7 +39,7 @@ Assumed criteria:
 ### String Grouping
 
 #### Group Anagrams
-File: `dayOneP2.js`
+File: `dayOne/dayOneP2.js`
 
 Tests:
 - transforming strings into a normalized key
@@ -45,7 +56,7 @@ Assumed criteria:
 ### Frequency Counting
 
 #### Top K Frequent Elements
-File: `dayOneP3.js`
+File: `dayOne/dayOneP3.js`
 
 Tests:
 - counting occurrences of values
@@ -62,7 +73,7 @@ Assumed criteria:
 ### Sequence Detection
 
 #### Longest Consecutive Sequence
-File: `dayOneP4.js`
+File: `dayOne/dayOneP4.js`
 
 Tests:
 - using a `Set` for fast membership checks
@@ -76,9 +87,27 @@ Assumed criteria:
 - numbers do not need to be adjacent in the original array
 - output should be the length of the longest consecutive sequence
 
+### Prefix Sum Counting
+
+#### Subarray Sum Equals K
+File: `dayOne/dayOneP5.js`
+
+Tests:
+- using a running prefix sum to represent totals up to each index
+- tracking prefix-sum frequencies with a `Map`
+- counting all contiguous subarrays that reach a target sum
+- handling repeated prefix sums to count multiple matches correctly
+
+Assumed criteria:
+- input is an array of numbers and a target integer `k`
+- output should be the total count of contiguous subarrays whose sum equals `k`
+- subarrays must be continuous slices of the original array
+- return a single number
+
 ## Current File List
 
-- `dayoneP1.js`
-- `dayOneP2.js`
-- `dayOneP3.js`
-- `dayOneP4.js`
+- `dayOne/dayoneP1.js`
+- `dayOne/dayOneP2.js`
+- `dayOne/dayOneP3.js`
+- `dayOne/dayOneP4.js`
+- `dayOne/dayOneP5.js`

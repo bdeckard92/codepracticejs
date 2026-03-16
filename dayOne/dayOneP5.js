@@ -32,6 +32,13 @@ currentSum - targetSum?"
 
 Each time that value exists, it represents a valid starting point for a
 subarray ending at the current index.
+
+Short dry run for nums = [1, 1, 1], target = 2:
+- Start: prefixCount = { 0: 1 }, currentSum = 0, count = 0
+- Read first 1: currentSum = 1, need -1, not found, store 1
+- Read second 1: currentSum = 2, need 0, found once, count = 1, store 2
+- Read third 1: currentSum = 3, need 1, found once, count = 2, store 3
+- Final answer: 2 matching subarrays
 */
 
 nums = [1,1,1];
